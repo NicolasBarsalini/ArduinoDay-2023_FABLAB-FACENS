@@ -42,6 +42,7 @@ void playAudios3()
     EEPROM[7] = annulled;
     Serial.print("Clock: "); Serial.print(clock_min); Serial.print(":"); Serial.println(clock_seg);
     Serial.println("ANNULED!");
+    digitalWrite(poster, LOW);
     loop();
   }
 
